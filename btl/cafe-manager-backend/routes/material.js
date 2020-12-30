@@ -39,7 +39,7 @@ router.post('/material', async (req, res) => {
             description: req.body.description,
             amountInput: req.body.amountInput,
             unit: req.body.unit,
-            priceperunit: req.body.priceperunit
+            priceperunit: req.body.priceperunit ? req.body.priceperunit : 1
         }
     );
     try {
